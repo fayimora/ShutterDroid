@@ -11,7 +11,7 @@ import retrofit2.http.Query;
  */
 public interface ShutterShockService {
   @GET("/v2/images/search")
-  Call<List<ShutterResponse>> search(@Query("query") String query);
+  Call<ShutterResponse> search(@Query("query") String query);
 
   @GET("/v2/images/search")
   Call<ShutterResponse> getRecent(@Query("added_date_start") String date);

@@ -30,4 +30,8 @@ public class Image {
     @SerializedName("url")
     private String url;
   }
+
+  public String getLargeThumbnail(){
+    return this.assets.largeThumb.url;
+  }
 }
